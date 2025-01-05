@@ -4,11 +4,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
