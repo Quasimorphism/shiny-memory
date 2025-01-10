@@ -25,8 +25,8 @@
 &pro_micro_i2c {
     status = "okay";
     
-    st7789: st7789v@0 {
-        compatible = "solomon,ssd1315";
+    oled: ssd1306@3c {
+        compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
