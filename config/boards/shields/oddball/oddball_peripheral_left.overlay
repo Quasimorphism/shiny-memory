@@ -5,6 +5,8 @@
  */
 
 #include "oddball.dtsi"
+#include "oddball_trackball.dtsi"
+#include "split_input_common.dtsi"
 
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
