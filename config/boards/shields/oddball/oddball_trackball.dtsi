@@ -49,10 +49,23 @@
 	pinctrl-1 = <&spi1_sleep>;
 	pinctrl-names = "default", "sleep";
 	cs-gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
+
 	trackball: trackball@0 {
 		compatible = "pixart,pmw3610";
 		status = "okay";
 		label = "TRACKBALL0";
+		reg = <0>;
+		spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+	    cpi = <1200>;
+	    evt-type = <INPUT_EV_REL>;
+	    x-input-code = <INPUT_REL_X>;
+	    y-input-code = <INPUT_REL_Y>;
+	};
+    trackball2: trackball2@0 {
+		compatible = "pixart,pmw3610";
+		status = "okay";
+		label = "TRACKBALL2";
 		reg = <0>;
 		spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;

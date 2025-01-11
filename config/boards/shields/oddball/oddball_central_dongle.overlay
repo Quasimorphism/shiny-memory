@@ -41,7 +41,7 @@
 	compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
-	oled: sh1106@3c {
+	oled: ssd1306@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <129>;
@@ -58,5 +58,8 @@
 };
 
 &trackball_listener {
+    status = "okay";
+};
+&trackball_listener2 {
     status = "okay";
 };
