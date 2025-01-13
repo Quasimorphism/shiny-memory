@@ -31,10 +31,20 @@
     compatible = "zmk,input-listener";
     status = "disabled";
     device = <&trackball_split>;
+
+    scroll {
+      layers = <SCRL>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
+    };
   };
   trackball_listener2: trackball_listener2 {
     compatible = "zmk,input-listener";
     status = "disabled";
     device = <&trackball_split2>;
+
+    scroll {
+      layers = <SCRL>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
+    };
   };
 };
