@@ -61,6 +61,46 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <9 10>;
         };
+
+        C_Lpgup {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <2 3>;
+        };
+
+        C_Rpgup {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <9 8>;
+        };
+
+        C_Lpgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <27 26>;
+        };
+
+        C_Rpgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <32 33>;
+        };
+
+        C_Lhome {
+            bindings = <&kp HOME>;
+            key-positions = <14 13>;
+        };
+
+        C_Rhome {
+            bindings = <&kp HOME>;
+            key-positions = <21 20>;
+        };
+
+        C_Lend {
+            bindings = <&kp END>;
+            key-positions = <15 14>;
+        };
+
+        C_Rend {
+            bindings = <&kp END>;
+            key-positions = <22 21>;
+        };
     };
 
     keymap {
