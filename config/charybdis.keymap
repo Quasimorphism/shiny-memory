@@ -34,7 +34,7 @@
         };
 
         C_backslash {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <34 35>;
         };
 
@@ -55,12 +55,12 @@
 
         C_lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <27 26>;
+            key-positions = <27 25>;
         };
 
         C_rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 33>;
+            key-positions = <32 34>;
         };
 
         C_Lpgup {
@@ -142,6 +142,16 @@
             bindings = <&mo 2>;
             key-positions = <6 30>;
         };
+
+        C_del {
+            bindings = <&kp DELETE>;
+            key-positions = <31 32>;
+        };
+
+        C_insert {
+            bindings = <&kp INSERT>;
+            key-positions = <27 28>;
+        };
     };
 
     keymap {
@@ -166,7 +176,7 @@
         functions {
             bindings = <
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans    &trans  &kp F15  &kp F14  &kp F13  &kp F12  &kp F11
-&kp F6   &kp F6   &kp F8   &kp F9   &kp F10  &trans    &trans  &kp F10  &kp F9   &kp F8   &kp F7   &kp F6
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans    &trans  &kp F10  &kp F9   &kp F8   &kp F7   &kp F6
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans    &trans  &kp F5   &kp F4   &kp F3   &kp F2   &kp F1
             >;
         };
