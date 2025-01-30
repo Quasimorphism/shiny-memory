@@ -54,32 +54,32 @@
 
         C_lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 1>;
+            key-positions = <27 26>;
         };
 
         C_rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 10>;
+            key-positions = <32 33>;
         };
 
         C_Lpgup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         C_Rpgup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <9 8>;
+            key-positions = <9 10>;
         };
 
         C_Lpgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <27 26>;
+            key-positions = <26 25>;
         };
 
         C_Rpgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
         };
 
         C_Lhome {
@@ -89,7 +89,7 @@
 
         C_Rhome {
             bindings = <&kp HOME>;
-            key-positions = <21 20>;
+            key-positions = <21 22>;
         };
 
         C_Lend {
@@ -99,7 +99,7 @@
 
         C_Rend {
             bindings = <&kp END>;
-            key-positions = <22 21>;
+            key-positions = <21 20>;
         };
     };
 
