@@ -3,6 +3,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -84,22 +85,42 @@
 
         C_Lhome {
             bindings = <&kp HOME>;
-            key-positions = <14 13>;
+            key-positions = <3 2>;
         };
 
         C_Rhome {
             bindings = <&kp HOME>;
-            key-positions = <21 22>;
+            key-positions = <8 9>;
         };
 
         C_Lend {
             bindings = <&kp END>;
-            key-positions = <15 14>;
+            key-positions = <27 26>;
         };
 
         C_Rend {
             bindings = <&kp END>;
-            key-positions = <21 20>;
+            key-positions = <32 33>;
+        };
+
+        C_Llc {
+            bindings = <&mkp MB1>;
+            key-positions = <14 15>;
+        };
+
+        C_Rlc {
+            bindings = <&mkp MB1>;
+            key-positions = <20 21>;
+        };
+
+        C_Lrc {
+            bindings = <&mkp MB2>;
+            key-positions = <14 13>;
+        };
+
+        C_Rrc {
+            bindings = <&mkp RCLK>;
+            key-positions = <21 22>;
         };
     };
 
@@ -108,9 +129,9 @@
 
         Base {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T  &kp BSPC     &kp TAB     &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G  &kp SPACE    &kp ENTER   &kp H  &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B  &kp LCTRL    &kp RSHIFT  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Q  &kp W  &kp E  &kp R  &kp T  &kp BACKSPACE    &kp TAB         &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G  &kp SPACE        &kp ENTER       &kp H  &kp J  &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V  &kp B  &kp LCTRL        &kp LEFT_SHIFT  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
             >;
         };
     };
