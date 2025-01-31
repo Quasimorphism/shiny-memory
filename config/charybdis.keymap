@@ -152,6 +152,16 @@
             bindings = <&kp INSERT>;
             key-positions = <27 14>;
         };
+
+        C_Rscroll {
+            bindings = <&mo 3>;
+            key-positions = <20 22>;
+        };
+
+        C_Lscroll {
+            bindings = <&mo 3>;
+            key-positions = <13 15>;
+        };
     };
 
     keymap {
@@ -178,6 +188,14 @@
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans    &trans  &kp F15  &kp F14  &kp F13  &kp F12  &kp F11
 &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans    &trans  &kp F10  &kp F9   &kp F8   &kp F7   &kp F6
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans    &trans  &kp F5   &kp F4   &kp F3   &kp F2   &kp F1
+            >;
+        };
+
+        scroll_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
