@@ -28,9 +28,7 @@
 
     arrows {
       layers = <5>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_keys_mapper
-                          KEY_RIGHT KEY_LEFT
-                          KEY_UP KEY_DOWN>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_keys_mapper KEY_RIGHT KEY_LEFT KEY_UP KEY_DOWN>;
     };
   };
 
@@ -46,9 +44,7 @@
 
     arrows {
       layers = <6>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_keys_mapper
-                          KEY_RIGHT KEY_LEFT
-                          KEY_UP KEY_DOWN>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_keys_mapper KEY_RIGHT KEY_LEFT KEY_UP KEY_DOWN>;
     };
   };
 };
