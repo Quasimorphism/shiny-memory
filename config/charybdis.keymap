@@ -145,12 +145,12 @@
 
         C_del {
             bindings = <&kp DELETE>;
-            key-positions = <31 32>;
+            key-positions = <32 21>;
         };
 
         C_insert {
             bindings = <&kp INSERT>;
-            key-positions = <27 28>;
+            key-positions = <27 14>;
         };
     };
 
