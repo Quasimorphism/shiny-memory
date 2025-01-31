@@ -4,6 +4,7 @@
 / {
   zip_xy_to_keys_mapper: zip_xy_to_keys_mapper {
     compatible = "zmk,input-processor-xy-to-keys";
+    #input-processor-cells = <4>;
   };
 
   split_inputs {
