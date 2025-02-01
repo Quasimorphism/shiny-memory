@@ -162,6 +162,16 @@
             bindings = <&tog 4>;
             key-positions = <13 15>;
         };
+
+        C_Rarrow {
+            bindings = <&tog 5>;
+            key-positions = <13 27>;
+        };
+
+        C_Larrow {
+            bindings = <&tog 6>;
+            key-positions = <32 22>;
+        };
     };
 
     keymap {

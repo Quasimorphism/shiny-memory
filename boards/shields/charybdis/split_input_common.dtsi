@@ -3,14 +3,6 @@
 #include <input/processors.dtsi>
 
 / {
-  zip_xy_to_keys_mapper: zip_xy_to_keys_mapper {
-    compatible = "zmk,input-processor-xy-to-keys";
-    #input-processor-cells = <4>;
-    status = "okay";
-    /* Define a default binding array so the processor has something to reference */
-    bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
-  };
-
   split_inputs {
     #address-cells = <1>;
     #size-cells = <0>;
@@ -34,12 +26,9 @@
       layers = <3>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
     };
-
     arrows {
       layers = <5>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                        <&zip_xy_scaler 1 5>, 
-                        <&zip_xy_to_keys_mapper (79) (80) (82) (81)>;  // RIGHT, LEFT, UP, DOWN
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_arrow_mapper>;
     };
   };
 
@@ -52,12 +41,9 @@
       layers = <4>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
     };
-
     arrows {
       layers = <6>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-                        <&zip_xy_scaler 1 5>, 
-                        <&zip_xy_to_keys_mapper (79) (80) (82) (81)>;  // RIGHT, LEFT, UP, DOWN
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_arrow_mapper>;
     };
   };
 };
