@@ -184,12 +184,12 @@
         };
 
         C_Rsnipe {
-            bindings = <&tog 7>;
+            bindings = <&mo 7>;
             key-positions = <32 22>;
         };
 
         C_Lsnipen {
-            bindings = <&tog 8>;
+            bindings = <&mo 8>;
             key-positions = <27 13>;
         };
     };
