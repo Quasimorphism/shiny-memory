@@ -165,12 +165,12 @@
 
         C_Rnav {
             bindings = <&mo 5>;
-            key-positions = <23 18>;
+            key-positions = <23 30>;
         };
 
         C_Lnav {
             bindings = <&mo 6>;
-            key-positions = <17 12>;
+            key-positions = <29 12>;
         };
 
         C_Rm3 {
@@ -184,12 +184,12 @@
         };
 
         C_Rsnipe {
-            bindings = <&mo 7>;
+            bindings = <&tog 7>;
             key-positions = <32 22>;
         };
 
         C_Lsnipen {
-            bindings = <&mo 8>;
+            bindings = <&tog 8>;
             key-positions = <27 13>;
         };
     };
