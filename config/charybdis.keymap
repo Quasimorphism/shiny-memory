@@ -188,7 +188,7 @@
             key-positions = <32 22>;
         };
 
-        C_Lsnipen {
+        C_Lsnipe {
             bindings = <&tog 8>;
             key-positions = <27 13>;
         };
