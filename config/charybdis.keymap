@@ -172,6 +172,16 @@
             bindings = <&mo 6>;
             key-positions = <17 12>;
         };
+
+        C_Rm3 {
+            bindings = <&mkp MB3>;
+            key-positions = <21 19>;
+        };
+
+        C_Lm3 {
+            bindings = <&mkp MB3>;
+            key-positions = <14 16>;
+        };
     };
 
     keymap {
