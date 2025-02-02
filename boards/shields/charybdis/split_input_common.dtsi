@@ -26,10 +26,6 @@
       layers = <3>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 2>, <&zip_xy_to_scroll_mapper>;
     };
-    snipe {
-      layers = <7>;
-      input-processors = <&zip_xy_scaler 1 5>;
-    };
   };
 
   trackball_listener2: trackball_listener2 {
@@ -40,10 +36,6 @@
     scroll {
       layers = <4>;
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 2>, <&zip_xy_to_scroll_mapper>;
-    };
-    snipe {
-      layers = <8>;
-      input-processors = <&zip_xy_scaler 1 5>;
     };
   };
 };
