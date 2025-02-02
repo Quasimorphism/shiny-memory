@@ -182,6 +182,16 @@
             bindings = <&mkp MB3>;
             key-positions = <14 16>;
         };
+
+        C_Rsnipe {
+            bindings = <&tog 7>;
+            key-positions = <32 22>;
+        };
+
+        C_Lsnipen {
+            bindings = <&tog 8>;
+            key-positions = <25 15>;
+        };
     };
 
     keymap {
@@ -240,6 +250,22 @@
 &trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Rsnipe {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Lsnipe {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
