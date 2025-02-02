@@ -162,6 +162,16 @@
             bindings = <&tog 4>;
             key-positions = <13 15>;
         };
+
+        C_Rnav {
+            bindings = <&mo 5>;
+            key-positions = <23 18>;
+        };
+
+        C_Lnav {
+            bindings = <&mo 6>;
+            key-positions = <17 12>;
+        };
     };
 
     keymap {
@@ -204,6 +214,22 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Rnav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+            >;
+        };
+
+        Lnav {
+            bindings = <
+&trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
