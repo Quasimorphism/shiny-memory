@@ -190,7 +190,7 @@
 
         C_Lsnipen {
             bindings = <&tog 8>;
-            key-positions = <25 15>;
+            key-positions = <27 13>;
         };
     };
 
@@ -267,6 +267,20 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Rsnipe {
+            if-layers = <3 7>;
+            then-layer = <7>;
+        };
+
+        Lsnipe {
+            if-layers = <4 8>;
+            then-layer = <8>;
         };
     };
 };
