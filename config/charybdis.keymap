@@ -18,16 +18,6 @@
             key-positions = <13 12>;
         };
 
-        C_alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <17 5>;
-        };
-
-        C_super {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <18 6>;
-        };
-
         C_apos {
             bindings = <&kp APOSTROPHE>;
             key-positions = <22 23>;
@@ -125,12 +115,12 @@
 
         C_Lnum {
             bindings = <&mo 1>;
-            key-positions = <17 29>;
+            key-positions = <17 5>;
         };
 
         C_Rnum {
             bindings = <&mo 1>;
-            key-positions = <18 30>;
+            key-positions = <18 6>;
         };
 
         C_Lfn {
@@ -161,16 +151,6 @@
         C_Lscroll {
             bindings = <&tog 4>;
             key-positions = <13 27>;
-        };
-
-        C_Rnav {
-            bindings = <&mo 5>;
-            key-positions = <23 18>;
-        };
-
-        C_Lnav {
-            bindings = <&mo 6>;
-            key-positions = <12 17>;
         };
 
         C_Rm3 {
@@ -219,25 +199,25 @@
 
         Base {
             bindings = <
-&kp Q            &kp W            &kp E         &kp R          &kp T  &kp BACKSPACE    &kp TAB         &kp Y  &kp U               &kp I         &kp O             &kp P
-&HML LEFT_GUI A  &HML LEFT_ALT S  &HML LCTRL D  &HML LSHIFT F  &kp G  &kp SPACE        &kp ENTER       &kp H  &HMR RIGHT_SHIFT J  &HMR RCTRL K  &HMR RIGHT_ALT L  &HMR RIGHT_GUI SEMI
-&kp Z            &kp X            &kp C         &kp V          &kp B  &kp LCTRL        &kp LEFT_SHIFT  &kp N  &kp M               &kp COMMA     &kp DOT           &kp SLASH
+&kp Q            &kp W            &kp E         &kp R          &kp T  &mo 6        &mo 5          &kp Y  &kp U               &kp I         &kp O             &kp P
+&HML LEFT_GUI A  &HML LEFT_ALT S  &HML LCTRL D  &HML LSHIFT F  &kp G  &kp SPACE    &kp BACKSPACE  &kp H  &HMR RIGHT_SHIFT J  &HMR RCTRL K  &HMR RIGHT_ALT L  &HMR RIGHT_GUI SEMI
+&kp Z            &kp X            &kp C         &kp V          &kp B  &kp TAB      &kp ENTER      &kp N  &kp M               &kp COMMA     &kp DOT           &kp SLASH
             >;
         };
 
         num {
             bindings = <
+&trans           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans         &trans        &trans                &trans
 &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans    &trans  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &trans    &trans  &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans         &trans        &trans                &trans
             >;
         };
 
         functions {
             bindings = <
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans    &trans  &kp F15  &kp F14  &kp F13  &kp F12  &kp F11
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans    &trans  &kp F10  &kp F9   &kp F8   &kp F7   &kp F6
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans    &trans  &kp F5   &kp F4   &kp F3   &kp F2   &kp F1
+&kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans    &trans  &trans  &kp F12  &kp F11  &kp F10  &kp F9
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans    &trans  &trans  &kp F8   &kp F7   &kp F6   &kp F5
+&kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans    &trans  &trans  &kp F4   &kp F3   &kp F2   &kp F1
             >;
         };
 
@@ -259,17 +239,17 @@
 
         Rnav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans        &trans
             >;
         };
 
         Lnav {
             bindings = <
-&trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans  &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
