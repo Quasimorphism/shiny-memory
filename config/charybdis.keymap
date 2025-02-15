@@ -125,32 +125,32 @@
 
         C_Lfn {
             bindings = <&mo 2>;
-            key-positions = <5 29>;
+            key-positions = <29 17>;
         };
 
         C_Rfn {
             bindings = <&mo 2>;
-            key-positions = <6 30>;
+            key-positions = <30 18>;
         };
 
         C_del {
             bindings = <&kp DELETE>;
-            key-positions = <32 21>;
+            key-positions = <6 30>;
         };
 
         C_insert {
             bindings = <&kp INSERT>;
-            key-positions = <27 14>;
+            key-positions = <5 29>;
         };
 
         C_Rscroll {
             bindings = <&tog 3>;
-            key-positions = <22 32>;
+            key-positions = <22 20 21>;
         };
 
         C_Lscroll {
             bindings = <&tog 4>;
-            key-positions = <13 27>;
+            key-positions = <13 15 14>;
         };
 
         C_Rm3 {
@@ -161,6 +161,11 @@
         C_Lm3 {
             bindings = <&mkp MB3>;
             key-positions = <15 13>;
+        };
+
+        C_lang {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <5 6>;
         };
     };
 
