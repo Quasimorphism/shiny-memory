@@ -45,12 +45,12 @@
 
         C_lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <17 5>;
+            key-positions = <3 2 1>;
         };
 
         C_rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <18 6>;
+            key-positions = <10 9 8>;
         };
 
         C_Lpgup {
@@ -158,19 +158,29 @@
             key-positions = <15 13>;
         };
 
-        C_lang {
+        C_Llang {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <5 6>;
+            key-positions = <27 26 25>;
         };
 
         C_Lnav {
             bindings = <&mo 6>;
-            key-positions = <17 5 29>;
+            key-positions = <17 5>;
         };
 
         C_Rnav {
             bindings = <&mo 5>;
-            key-positions = <18 6 30>;
+            key-positions = <18 6>;
+        };
+
+        C_Rlang {
+            bindings = <&kp LANG1>;
+            key-positions = <32 33 34>;
+        };
+
+        C_tempLang {
+            bindings = <&moLang>;
+            key-positions = <5 6>;
         };
     };
 
@@ -201,6 +211,21 @@
             flavor = "balanced";
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 6 18 30>;
+        };
+    };
+
+    macros {
+        moLang: moLang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LANG1>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LANG1>;
+
+            label = "MOLANG";
         };
     };
 
