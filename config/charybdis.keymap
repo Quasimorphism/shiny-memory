@@ -160,7 +160,7 @@
 
         C_Llang {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <27 26 25>;
+            key-positions = <27 25>;
         };
 
         C_Lnav {
@@ -175,12 +175,12 @@
 
         C_Rlang {
             bindings = <&kp LANG1>;
-            key-positions = <32 33 34>;
+            key-positions = <32 34>;
         };
 
         C_tempLang {
             bindings = <&moLang>;
-            key-positions = <5 6>;
+            key-positions = <29 30>;
         };
     };
 
@@ -219,9 +219,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &kp LANG1>,
+                <&macro_tap>,
+                <&kp LANG1>,
                 <&macro_pause_for_release>,
-                <&macro_tap &kp LANG1>;
+                <&macro_tap>,
+                <&kp LANG1>;
 
             label = "MOLANG";
         };
